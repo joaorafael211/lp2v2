@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DL.AuditoriaDL" Collapsed="true">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <AssociationLine Name="auditoria" Type="BO.auditoriaBO" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="6.375" />
+        <Point X="9.5" Y="6.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.084" Y="-0.261" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Auditoria" Type="BO.auditoriaBO" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="6.188" />
+        <Point X="7.625" Y="6.188" />
+        <Point X="7.625" Y="6.188" />
+        <Point X="9.5" Y="6.188" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEgAAAAAAAAAAAAAAAAQAAAAEAAiA=</HashCode>
+      <FileName>AuditoriaDL.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="auditoria" />
+      <Property Name="Auditoria" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="vul" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DL.Auditorias" Collapsed="true">
+    <Position X="4.25" Y="7.25" Width="1.5" />
+    <AssociationLine Name="auditorias" Type="DL.AuditoriaDL" FixedFromPoint="true">
+      <Path>
+        <Point X="5" Y="7.25" />
+        <Point X="5" Y="6.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.122" Y="0.252" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAEAAAEAAEAAAAAgAAAQAAAAAAQgAAAABAAAAAAA=</HashCode>
+      <FileName>Auditorias.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="auditorias" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DL.ColaboradorDL" Collapsed="true">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DL.ColaboradorDL.EstadoCol" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>colaboradorDL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="c" Type="BO.colaboradorBO" FixedFromPoint="true">
+      <Path>
+        <Point X="13.25" Y="4.312" />
+        <Point X="13.25" Y="6" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.168" Y="0.829" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Colaborador" Type="BO.colaboradorBO">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.054" Y="0.805" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAEgAAAAAAAAAAAAACAAAAAAAAAAig=</HashCode>
+      <FileName>colaboradorDL.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="c" />
+      <Property Name="Colaborador" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DL.Colaboradores" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <AssociationLine Name="colaboradores" Type="DL.ColaboradorDL">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.198" Y="0.805" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABIAYAAAAAAAAACgAAAAAAAAAAAAAAgAAAAAAAAgA=</HashCode>
+      <FileName>Colaboradores.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="colaboradores" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DL.EquipamentoInfDL" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="2.5" />
+    <AssociationLine Name="equipInf" Type="BO.EquipamentoInfBO" FixedFromPoint="true">
+      <Path>
+        <Point X="6" Y="2.188" />
+        <Point X="9.5" Y="2.188" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.409" Y="-0.347" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="vulnerabilidades" Type="DL.VulnerabilidadeDL" FixedFromPoint="true">
+      <Path>
+        <Point X="4.938" Y="2.312" />
+        <Point X="4.938" Y="3.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.294" Y="0.649" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="EquipamentoInformatico" Type="BO.EquipamentoInfBO" FixedFromPoint="true">
+      <Path>
+        <Point X="6" Y="1.938" />
+        <Point X="9.5" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAEKAAAAAAAiA=</HashCode>
+      <FileName>EquipamentoInfDL.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="equipInf" />
+      <Property Name="EquipamentoInformatico" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="vulnerabilidades" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DL.EquipamentosInf" Collapsed="true">
+    <Position X="4" Y="0.5" Width="2" />
+    <AssociationLine Name="equipamentoInfs" Type="DL.EquipamentoInfDL" FixedToPoint="true">
+      <Path>
+        <Point X="4.938" Y="1.062" />
+        <Point X="4.938" Y="1.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.086" Y="0.204" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAAAAAACAAAAABAQAAAKAAAAAAAAgAAQ=</HashCode>
+      <FileName>EquipamentosInf.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="equipamentoInfs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DL.VulnerabilidadeDL" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.75" />
+    <NestedTypes>
+      <Enum Name="DL.VulnerabilidadeDL.EstadoVul" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>VulnerabilidadeDL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="vulnerabilidade" Type="BO.vulnerabilidadeBO" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="4.187" />
+        <Point X="9.5" Y="4.187" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.05" Y="-0.299" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAIAAEgCAAAAAAAAAAAAAAAAAAAAAAAig=</HashCode>
+      <FileName>VulnerabilidadeDL.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="vulnerabilidade" />
+      <Property Name="Vulnerabilidade" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DL.Vulnerabilidades" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="vulnerabilidades" Type="DL.VulnerabilidadeDL">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.563" Y="0.122" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAAAgAAAAgAAAAAAAAAAAAAAEAIAiAAAAAA=</HashCode>
+      <FileName>Vulnerabilidades.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="vulnerabilidades" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BO.auditoriaBO" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="colaborador" Type="BO.colaboradorBO" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="6.25" />
+        <Point X="12.75" Y="6.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.551" Y="-0.249" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Field Name="colaborador" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BO.colaboradorBO" Collapsed="true">
+    <Position X="12.75" Y="6" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BO.vulnerabilidadeBO" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BO.EquipamentoInfBO" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
